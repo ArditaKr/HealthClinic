@@ -1,5 +1,6 @@
 package com.arditakrasniqi.healthclinic.presentation.navigation.bottombar
 
+import androidx.compose.foundation.layout.offset
 import androidx.compose.material.BottomNavigation
 import androidx.compose.material.BottomNavigationItem
 import androidx.compose.material.Icon
@@ -9,12 +10,17 @@ import androidx.compose.material.icons.filled.AppsOutage
 import androidx.compose.material.icons.filled.CalendarMonth
 import androidx.compose.material.icons.filled.Folder
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.PersonOutline
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
@@ -29,7 +35,8 @@ fun BottomNavigation(navController: NavHostController, items: List<AppScreens>) 
 
     BottomNavigation(
         backgroundColor = DeepBlue,
-        contentColor = Color.White
+        contentColor = Color.White,
+        modifier = Modifier.offset(0.dp)
     ) {
         val currentRoute = navBackStackEntry?.destination?.route
         items.forEach { item ->
@@ -48,7 +55,8 @@ fun BottomNavigation(navController: NavHostController, items: List<AppScreens>) 
                         )
 
                         AppScreens.SettingsScreen -> Icon(
-                            painterResource(id = R.drawable.ic_academia),
+                            imageVector = Icons.Default.List,
+                            tint = Color.White,
                             contentDescription = null
                         )
 

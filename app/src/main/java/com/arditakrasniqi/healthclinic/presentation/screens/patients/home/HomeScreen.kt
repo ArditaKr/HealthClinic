@@ -33,16 +33,15 @@ fun HomeScreen(
         AppScreens.PatientMainScreen,
         AppScreens.PatientAppointmentsScreen,
         AppScreens.DoctorsScreen,
-        AppScreens.PatientDetailsScreen
+        AppScreens.SettingsScreen
     )
 
     Scaffold(
         bottomBar = { BottomNavigation(navController = navController,patientHomeItems) }
     ) { innerPadding ->
 
-        Box(modifier = Modifier.padding(innerPadding)) {
             BottomBarNavigation(navController = navController, AppScreens.PatientMainScreen.route)
-        }
+
     }
 
 }

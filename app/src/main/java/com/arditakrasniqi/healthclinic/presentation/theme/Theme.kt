@@ -49,9 +49,6 @@ fun HealthClinicTheme(
         shapes = Shapes,
         content = content
     )
-
-
-
 }
 
 @Composable

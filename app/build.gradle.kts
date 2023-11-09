@@ -116,6 +116,7 @@ dependencies {
     implementation("androidx.camera:camera-view:1.3.0-beta02")
     implementation("androidx.camera:camera-extensions:1.3.0-beta02")
 
+
     // Rx Ble
     implementation("com.polidea.rxandroidble3:rxandroidble:1.17.2")
 

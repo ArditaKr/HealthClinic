@@ -36,7 +36,7 @@ fun ClinicHomeScreen(
     )
 
     Scaffold(
-        bottomBar = { BottomNavigation(navController = navController,clinicHomeItems ) }
+        bottomBar = { BottomNavigation(navController = navController, clinicHomeItems) }
     ) { innerPadding ->
         Box(modifier = Modifier.padding(innerPadding)) {
             BottomBarNavigation(navController = navController, AppScreens.SettingsScreen.route)

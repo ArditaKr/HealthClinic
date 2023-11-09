@@ -23,7 +23,7 @@ fun AppNavigation(
     val mainViewModel: MainViewModel = hiltViewModel()
     NavHost(
         navController = navController,
-        startDestination = AppScreens.LoginScreen.route
+        startDestination = AppScreens.PatientMainScreen.route
 
     ) {
         authGraph(navController)

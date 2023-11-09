@@ -75,6 +75,7 @@
     <string name="tavsiye_et">tavsiye_et</string>
 
     <string name="doctors">Doktorët</string>
-    <string name="dashboard">Ballina\n</string>
+    <string name="dashboard">Ballina</string>
     <string name="appointments">Terminet</string>
+    <string name="details">Detajet</string>
 </resources>

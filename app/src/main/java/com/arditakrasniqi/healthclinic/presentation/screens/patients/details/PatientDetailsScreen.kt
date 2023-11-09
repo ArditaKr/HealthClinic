@@ -27,7 +27,7 @@ fun PatientDetailsScreen(
         modifier = Modifier.fillMaxSize()
     ) {
         Text(
-            text = stringResource(id = R.string.appointments),
+            text = stringResource(id = R.string.details),
             fontSize = 20.sp,
             modifier = Modifier.padding(horizontal = 30.dp, vertical = 15.dp),
             fontWeight = FontWeight.Bold,
