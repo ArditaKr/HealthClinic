@@ -29,7 +29,7 @@ This repository contains the source code for a Health Clinic Android App built w
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/health-clinic-app.git
+   git clone https://github.com/ArditaKr/HealthClinic
    ```
 
 2. Open the project in Android Studio.
